@@ -28,6 +28,8 @@ namespace WebApplication2.Controllers
         
             var exten = config.GetSection("Extensions").GetChildren().Select(x => x.Value).ToList();
 
+            var Mode = config.GetValue<string>("Mode");
+
             return View();
         }
 
