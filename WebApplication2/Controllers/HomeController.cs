@@ -25,9 +25,8 @@ namespace WebApplication2.Controllers
         {
             var key = config.GetValue<string>("Key");
             var data1 = config.GetValue<string>("Data:D1");
-
+        
             var exten = config.GetSection("Extensions").GetChildren().Select(x => x.Value).ToList();
-
 
             return View();
         }
