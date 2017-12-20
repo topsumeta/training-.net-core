@@ -8,6 +8,8 @@ namespace WebApplication2.Models
         public string active { get; set; }
         public int start { get; set; }
         public int stop { get; set; }
+        public int previous { get; set; }
+        public int next { get; set; }
 
 
     }

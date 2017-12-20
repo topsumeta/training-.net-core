@@ -24,10 +24,14 @@ namespace WebApplication2.Controllers
                 pagModel.number = Int32.Parse(page);
                 pagModel.start = pagModel.number - 2;
                 pagModel.stop = pagModel.number + 2;
+                pagModel.previous = pagModel.start - 1;
+                pagModel.next = pagModel.stop + 2;
                 if (pagModel.start <=0)
                 {
                     pagModel.start = 1;
                     pagModel.stop = 5;
+                    pagModel.previous = 1;
+                    pagModel.next = 6;
                 }
             }
 

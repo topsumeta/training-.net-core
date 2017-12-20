@@ -4,12 +4,12 @@
 
     <nav aria-label="Page navigation example">
         <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="/Pagination?id=@Model.previous">Previous</a></li>
             @for (var i = @Model.start; i <= @Model.stop; i++)
             {
                 <li class="page-item"><a class="page-link" href="/Pagination?id=@i">@i</a></li>
             }
-            <li class="page-item"><a class="page-link">Next</a></li>
+            <li class="page-item"><a class="page-link" href="/Pagination?id=@Model.next">Next</a></li>
         </ul>
     </nav>
 
