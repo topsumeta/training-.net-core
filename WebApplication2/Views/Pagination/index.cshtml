@@ -7,7 +7,12 @@
             <li class="page-item"><a class="page-link" href="/Pagination?id=@Model.previous">Previous</a></li>
             @for (var i = @Model.start; i <= @Model.stop; i++)
             {
-                <li class="page-item"><a class="page-link" href="/Pagination?id=@i">@i</a></li>
+                var ac = "";
+                @if (@Model.number == @i)
+                {
+                    ac = "active";
+                }
+                <li class="page-item @ac"><a class="page-link" href="/Pagination?id=@i">@i</a></li>
             }
             <li class="page-item"><a class="page-link" href="/Pagination?id=@Model.next">Next</a></li>
         </ul>
