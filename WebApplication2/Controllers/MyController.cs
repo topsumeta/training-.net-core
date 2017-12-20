@@ -17,5 +17,14 @@ namespace WebApplication2.Controllers
 
             return View(myvar);
         }
+
+        [HttpPost]
+        public IActionResult Index(string firstName)
+        {
+
+            var test = firstName;
+
+            return Content($"Hello {firstName}");
+        }
     }
 }

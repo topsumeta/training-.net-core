@@ -6,4 +6,14 @@
 
 <h2>MyView @Model.RequestId</h2>
 
-<input type="text" asp-for="RequestId" />
+<a href="/Home">Home</a>
+
+<form asp-controller="My" method="post">
+
+    <input type="text" asp-for="firstName"/>
+
+
+    <button type="submit">Save</button>
+
+</form>
+
