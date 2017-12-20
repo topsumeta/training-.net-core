@@ -33,6 +33,11 @@ namespace WebApplication2.Controllers
             return View();
         }
 
+        public IActionResult status()
+        {
+            return Ok();
+        }
+
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
