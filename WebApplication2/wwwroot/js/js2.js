@@ -1,0 +1,4 @@
+﻿function b() {
+
+    return "B";
+}

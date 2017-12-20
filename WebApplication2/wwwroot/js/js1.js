@@ -1,0 +1,4 @@
+﻿function a() {
+
+    return "A";
+}
