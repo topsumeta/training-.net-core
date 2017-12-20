@@ -1,6 +1,14 @@
 ﻿@model PaginationViewModel
 
-@Model.number
+<div>
+    <Cache enabled="true">
+        Cache Time Inside Tag Helper : @DateTime.Now;
+    </Cache>
+</div>
+
+<div>
+    Current Time Inside Tag Helper : @DateTime.Now;
+</div>
 
     <nav aria-label="Page navigation example">
         <ul class="pagination">
