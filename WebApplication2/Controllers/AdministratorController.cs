@@ -16,12 +16,12 @@ namespace WebApplication2.Controllers
     {
       
         [AllowAnonymous]
-        public ActionResult Login()
+        public IActionResult Login()
         {
-            return Ok();
+            return View();
         }
 
-        public ActionResult Logout()
+        public IActionResult Logout()
         {
             return Ok();
         }
