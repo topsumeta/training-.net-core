@@ -11,10 +11,9 @@ namespace WebApplication2.Middleware
 
         private readonly RequestDelegate next;
 
-        public SampleMiddleware()
+        public SampleMiddleware(RequestDelegate next)
         {
             this.next = next;
-
         }
 
         public Task Invoke(HttpContext context)
