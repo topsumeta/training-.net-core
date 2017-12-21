@@ -10,7 +10,7 @@ using WebApplication2.Models;
 
 namespace WebApplication2.Controllers
 {
-    public class LoginViewController : ViewComponent
+    public class NavbarViewComponent : ViewComponent
     {
         public IViewComponentResult Invoke(int maxPriorty,bool isDone)
         {
