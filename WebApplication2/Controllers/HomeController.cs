@@ -38,6 +38,11 @@ namespace WebApplication2.Controllers
             return Ok();
         }
 
+        public IActionResult Login()
+        {
+            return Ok();
+        }
+
         [Route("Home/Route")]
         public IActionResult TestRoute()
         {
