@@ -46,6 +46,15 @@ namespace WebApplication2.Controllers
             return View();
         }
 
+        [Route("Home/Route/{id}")]
+        public IActionResult TestRoutePara(String id)
+        {
+
+
+            return View();
+        }
+
+
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
