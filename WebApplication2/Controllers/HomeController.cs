@@ -38,6 +38,14 @@ namespace WebApplication2.Controllers
             return Ok();
         }
 
+        [Route("Home/Route")]
+        public IActionResult TestRoute()
+        {
+       
+
+            return View();
+        }
+
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
