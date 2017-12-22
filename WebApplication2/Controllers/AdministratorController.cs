@@ -21,6 +21,13 @@ namespace WebApplication2.Controllers
             return View();
         }
 
+        [AllowAnonymous]
+        public IActionResult Signup()
+        {
+            return View();
+        }
+
+
         public IActionResult Logout()
         {
             return Ok();
