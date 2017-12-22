@@ -12,7 +12,7 @@ using WebApplication2.Models;
 namespace WebApplication2.Controllers
 {
     [Authorize(Policy = "Administrator")]
-    public class AdministratorController : Controller
+    public class AuthorizationController : Controller
     {
       
         [AllowAnonymous]
@@ -29,6 +29,11 @@ namespace WebApplication2.Controllers
             return View();
         }
 
+
+        public IActionResult Logout()
+        {
+            return Ok();
+        }
 
 
 
