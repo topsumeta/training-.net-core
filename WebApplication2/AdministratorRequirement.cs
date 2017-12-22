@@ -17,7 +17,7 @@ namespace WebApplication2
             if(context.Resource is AuthorizationFilterContext filterContext)
             {
                 var session = filterContext.HttpContext.Session;
-                var userId = session.GetString("UserId");
+                var userId = session.GetString("username");
                 if (string.IsNullOrEmpty(userId) == false) {
                     context.Succeed(requirement);
                 }

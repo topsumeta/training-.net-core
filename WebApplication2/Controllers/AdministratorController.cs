@@ -14,7 +14,15 @@ namespace WebApplication2.Controllers
     [Authorize(Policy = "Administrator")]
     public class AdministratorController : Controller
     {
+
       
+        public IActionResult index()
+        {
+
+
+            return View();
+        }
+
         [AllowAnonymous]
         public IActionResult Login()
         {

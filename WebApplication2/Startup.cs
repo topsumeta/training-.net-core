@@ -28,7 +28,7 @@ namespace WebApplication2
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
             {
-                options.LoginPath = "Home/Login/";
+                options.LoginPath = "/Home/";
             });
 
             services.AddAuthorization(option=> {

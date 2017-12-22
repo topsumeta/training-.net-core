@@ -6,7 +6,7 @@ namespace WebApplication2.Models
     {
         public string username { get; set; }
 
-        public string passowrd { get; set; }
+        public string password { get; set; }
 
         public string firstname { get; set; }
 
