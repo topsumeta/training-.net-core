@@ -15,17 +15,6 @@ namespace WebApplication2.Controllers
     public class AuthorizationController : Controller
     {
 
-        [HttpPost]
-        public IActionResult index([FromBody] UserViewModel model)
-        {
-
-            var user = model;
-
-
-            return Ok();
-        }
-
-
         [HttpGet]
         public IActionResult Login()
         {
@@ -38,13 +27,9 @@ namespace WebApplication2.Controllers
         [HttpPost]
         public IActionResult Login(UserViewModel model)
         {
-
             HttpContext.Session.SetString("username", model.username);
 
-            var user = model;
-
-
-            return View();
+            return RedirectToAction("Index", "Home");
         }
 
         public IActionResult Signup()
@@ -59,7 +44,7 @@ namespace WebApplication2.Controllers
             HttpContext.Session.Remove("username");
 
 
-            return View();
+            return RedirectToAction("Index", "Home");
         }
 
 
